@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.fastnews.news/2026/11/cash-flow-management-strategies-for.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FastNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-14T00:42:45.000Z</news:publication_date>
+      <news:title>Cash Flow Management Strategies for Canadian Businesses</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.fastnews.news/2026/11/data-backup-strategies-how-to-secure.html</loc>
     <news:news>
       <news:publication>
