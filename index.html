@@ -1,211 +1,236 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Latest News & Insights | FastNews</title>
-  <meta name="description" content="Explore the latest business, technology, personal finance and real estate articles from FastNews. Read every full story on the original FastNews website.">
-  <meta name="theme-color" content="#101827">
-  <link rel="canonical" href="https://feed.fastnews.news/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Latest News & Insights | FastNews">
-  <meta property="og:description" content="The latest stories from FastNews, all linked to their original articles.">
-  <meta property="og:url" content="https://feed.fastnews.news/">
-  <style>
-    :root{color-scheme:light;--ink:#172033;--muted:#687386;--line:#e6eaf0;--paper:#f5f7fa;--white:#fff;--accent:#ed563c;--navy:#101827;--navy2:#19263b;--radius:17px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
-    .topline{height:5px;background:var(--accent)}header{background:var(--navy);color:#fff}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:11px;font-weight:850;font-size:25px;letter-spacing:-1px}.brand-mark{width:34px;height:34px;border-radius:10px;background:var(--accent);display:grid;place-items:center;font-size:19px;font-weight:900}
-    .brand small{display:block;font-size:10px;letter-spacing:2px;color:#aab5c5;font-weight:650;margin-top:-4px}
-    .nav-link{font-size:14px;font-weight:700;color:#e4eaf2;border:1px solid #3b4658;padding:10px 15px;border-radius:999px}
-    .intro{padding:52px 0 43px;background:linear-gradient(115deg,var(--navy),var(--navy2));color:white}
-    .eyebrow{font-size:11px;letter-spacing:2.1px;text-transform:uppercase;color:#ff9a85;font-weight:800}
-    h1{font-size:clamp(34px,5vw,55px);line-height:1.05;letter-spacing:-2px;margin:12px 0 13px;max-width:720px}
-    .intro p{color:#c1cad7;max-width:650px;margin:0;font-size:16px}
-    .intro-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:28px;flex-wrap:wrap}
-    .stat{font-size:13px;color:#c1cad7}.stat strong{color:white}
-    .search{display:flex;align-items:center;gap:9px;background:#fff;border-radius:999px;padding:0 15px;width:min(340px,100%);height:45px;color:var(--muted)}
-    .search input{border:0;outline:0;width:100%;font:inherit;color:var(--ink);background:transparent}
-    main{padding:31px 0 65px}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:23px;flex-wrap:wrap}
-    .filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:#fff;color:#596477;border-radius:999px;padding:8px 14px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
-    .filter.active{background:var(--navy);border-color:var(--navy);color:white}
-    .section-label{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:850;color:#7c8798;margin:0 0 15px}
-    .feature{display:grid;grid-template-columns:1.08fr .92fr;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:30px;min-height:300px}
-    .feature-media{background:#e9edf2;min-height:300px}.feature-media img{width:100%;height:100%;min-height:300px;object-fit:cover;display:block}
-    .feature-copy{padding:30px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
-    .tag{display:inline-flex;background:#fff0ec;color:#bd402d;border-radius:999px;padding:5px 10px;font-size:11px;font-weight:850;letter-spacing:.5px;text-transform:uppercase}
-    .feature h2{font-size:clamp(24px,3vw,34px);line-height:1.16;letter-spacing:-1px;margin:15px 0 10px}
-    .meta{font-size:12px;color:#8993a2;font-weight:650}.feature p{color:var(--muted);margin:13px 0 18px}
-    .read{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:11px 16px;border-radius:9px;font-size:13px;font-weight:800}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
-    .card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #17203312}
-    .card-media{height:178px;background:#e9edf2;overflow:hidden}.card-media img{width:100%;height:100%;object-fit:cover;display:block}
-    .placeholder{height:100%;display:grid;place-items:center;color:#aab3bf;font-size:35px}
-    .card-body{padding:18px}.card h3{font-size:18px;line-height:1.3;letter-spacing:-.35px;margin:11px 0 8px}
-    .card p{font-size:13px;color:var(--muted);margin:0 0 14px;line-height:1.55}
-    .card-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid #f0f2f5;padding-top:12px;margin-top:14px}
-    .card-foot a{font-size:12px;font-weight:850;color:#d64b34}.card-foot time{font-size:11px;color:#929baa}
-    .status{padding:35px 20px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:14px;color:var(--muted)}
-    .spinner{width:25px;height:25px;border:3px solid #e8ebf0;border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px}@keyframes spin{to{transform:rotate(360deg)}}
-    .load-wrap{text-align:center;margin-top:28px}.load{border:1px solid #d9dfe8;background:#fff;color:var(--ink);padding:12px 20px;border-radius:999px;font:inherit;font-size:13px;font-weight:750;cursor:pointer}.load:disabled{opacity:.5;cursor:default}
-    footer{background:var(--navy);color:#aeb8c7;padding:28px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.foot strong{color:#fff}.foot a{color:#fff;text-decoration:underline;text-underline-offset:3px}
-    @media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.feature{grid-template-columns:1fr}.feature-media,.feature-media img{min-height:230px;height:230px}}
-    @media(max-width:560px){.wrap{width:min(100% - 28px,1160px)}.nav{height:67px}.brand{font-size:22px}.nav-link{font-size:12px;padding:8px 11px}.intro{padding:39px 0 32px}h1{letter-spacing:-1.4px}.intro-bottom{align-items:stretch}.search{width:100%}.grid{grid-template-columns:1fr;gap:14px}.card-media{height:205px}.feature-copy{padding:22px}.toolbar{align-items:flex-start}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Latest Stories | FastNews</title>
+<meta name="description" content="Browse the latest business, technology, personal finance and real estate articles from FastNews. Every story opens on the main FastNews website.">
+<meta name="theme-color" content="#0b2a4a">
+<!-- This page repeats headlines from the main site, so it is kept out of Google on purpose.
+     To let Google index it, change "noindex,follow" to "index,follow". -->
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://feed.fastnews.news/">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 rx=%276%27 fill=%27%23ffb703%27/%3E%3Cpath d=%27M13.5 3 6 13.5h5L10 21l8-11h-5.2z%27 fill=%27%230b2a4a%27/%3E%3C/svg%3E">
+<style>
+:root{--bg:#fff;--surface:#f3f5f8;--ink:#13171d;--mute:#586272;--line:#e2e6ec;--navy:#0b2a4a;--amber:#ffb703;--link:#0b57d0;--r:8px;
+--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+--serif:Charter,"Iowan Old Style","Palatino Linotype",Georgia,"Times New Roman",serif}
+@media(prefers-color-scheme:dark){:root{--bg:#0f141b;--surface:#171e28;--ink:#e8ecf2;--mute:#9aa6b6;--line:#263040;--link:#8ab4ff;--navy:#08182b}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+img{max-width:100%;height:auto}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+header{background:var(--navy);color:#fff;border-bottom:3px solid var(--amber)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px}
+.logo{display:flex;align-items:center;gap:10px;font:900 1.6rem/1 var(--sans);letter-spacing:-.04em}
+.logo:hover{text-decoration:none}.logo i{font-style:normal;color:var(--amber);margin-left:.08em}
+.visit{padding:8px 14px;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:.875rem;font-weight:700}
+.intro{background:var(--navy);color:#fff;padding:36px 0 30px}
+.intro h1{margin:0 0 10px;max-width:720px;font:700 clamp(1.9rem,4.6vw,3rem)/1.12 var(--serif);letter-spacing:-.015em}
+.intro p{margin:0;max-width:640px;color:#c5d0de}
+.intro-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px}
+.count{font-size:.875rem;color:#c5d0de}.count strong{color:#fff}
+.search{display:flex;width:min(360px,100%)}
+.search input{flex:1;min-width:0;padding:10px 14px;border:0;border-radius:var(--r) 0 0 var(--r);font:inherit;font-size:.9375rem;background:#fff;color:#13171d}
+.search button{border:0;padding:10px 16px;border-radius:0 var(--r) var(--r) 0;background:var(--amber);color:#1a1300;font:700 .9375rem var(--sans);cursor:pointer}
+main{padding:26px 0 56px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.filter{padding:8px 15px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:600 .875rem var(--sans);cursor:pointer}
+.filter[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}
+.label{margin:0 0 14px;padding-left:10px;border-left:4px solid var(--amber);font:800 1.1rem/1.2 var(--sans)}
+.tag{display:inline-block;padding:4px 8px;border-radius:3px;background:var(--cat,var(--amber));color:var(--catfg,#1a1300);font:700 .75rem/1 var(--sans)}
+[data-cat=business]{--cat:#0f7b4a;--catfg:#fff}
+[data-cat=technology]{--cat:#6a3fd1;--catfg:#fff}
+[data-cat=personal-finance]{--cat:#00796b;--catfg:#fff}
+[data-cat=real-estate]{--cat:#d9480f;--catfg:#fff}
+.media{display:block;aspect-ratio:16/9;border-radius:var(--r);background:var(--surface);overflow:hidden}
+.media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.media:hover img{transform:scale(1.03)}
+.ph{display:grid;place-items:center;width:100%;height:100%;color:var(--mute);font-size:2rem}
+.meta{margin:0;font-size:.8125rem;color:var(--mute)}
+.feature{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;margin-bottom:34px;padding-bottom:30px;border-bottom:1px solid var(--line)}
+.feature h2{margin:12px 0 10px;font:700 clamp(1.6rem,3.2vw,2.3rem)/1.15 var(--serif);letter-spacing:-.01em}
+.feature h2 a:hover,.card h3 a:hover{color:var(--link);text-decoration:none}
+.feature p{margin:12px 0 16px;color:var(--mute);font:1.0625rem/1.6 var(--serif)}
+.read{display:inline-block;padding:10px 16px;border-radius:var(--r);background:var(--amber);color:#1a1300;font-weight:700;font-size:.9rem}
+.read:hover{text-decoration:none;filter:brightness(.93)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 22px}
+.card h3{margin:10px 0 8px;font:700 1.125rem/1.3 var(--serif)}
+.card p{margin:0 0 8px;font-size:.875rem;line-height:1.5;color:var(--mute)}
+.card .top{margin-top:10px}
+.status{padding:34px 16px;text-align:center;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);color:var(--mute)}
+.status .btn{margin-top:12px}
+.btn{padding:10px 18px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);color:var(--ink);font:700 .9rem var(--sans);cursor:pointer}
+.btn:hover{border-color:var(--ink)}.btn:disabled{opacity:.5;cursor:default}
+.more{text-align:center;margin-top:30px}
+footer{background:var(--navy);color:#cfd8e6;padding:26px 0;font-size:.9rem}
+footer a{color:#fff}footer ul{display:flex;flex-wrap:wrap;gap:6px 20px;list-style:none;margin:0 0 12px;padding:0}
+footer p{margin:0}
+.noscript{margin:20px 0;padding:16px;background:var(--surface);border-radius:var(--r)}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.feature{grid-template-columns:1fr}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.logo{font-size:1.4rem}.visit{font-size:.8rem;padding:7px 11px}}
+@media(prefers-reduced-motion:reduce){.media img{transition:none}}
+</style>
 </head>
 <body>
-  <div class="topline"></div>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="https://www.fastnews.news/" aria-label="FastNews home">
-        <span class="brand-mark">F</span><span>FastNews<small>NEWS &amp; INSIGHTS</small></span>
-      </a>
-      <a class="nav-link" href="https://www.fastnews.news/">Visit main website ↗</a>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="https://www.fastnews.news/" aria-label="FastNews home"><svg aria-hidden="true" height="32" viewBox="0 0 24 24" width="32"><rect fill="#ffb703" height="24" rx="6" width="24"/><path d="M13.5 3 6 13.5h5L10 21l8-11h-5.2z" fill="#0b2a4a"/></svg><span>Fast<i>News</i></span></a>
+    <a class="visit" href="https://www.fastnews.news/">Visit main site</a>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <h1>The latest from FastNews</h1>
+    <p>Business, technology, personal finance and real estate. Pick a story and read the full article on the main FastNews website.</p>
+    <div class="intro-bottom">
+      <div class="count" id="count" aria-live="polite"></div>
+      <form class="search" id="search-form" role="search"><input id="q" type="search" placeholder="Search stories" aria-label="Search stories" autocomplete="off"><button type="submit">Search</button></form>
     </div>
-  </header>
-  <section class="intro">
-    <div class="wrap">
-      <div class="eyebrow">The latest from FastNews</div>
-      <h1>Stories that keep you<br>one step ahead.</h1>
-      <p>Explore the latest articles across business, technology, personal finance and real estate. Choose a story to read the full article on FastNews.</p>
-      <div class="intro-bottom">
-        <div class="stat" id="story-count">Bringing you the latest stories…</div>
-        <label class="search" aria-label="Search articles"><span>⌕</span><input id="search" type="search" placeholder="Search articles…" autocomplete="off"></label>
-      </div>
-    </div>
-  </section>
-  <main class="wrap">
-    <div class="toolbar">
-      <div class="filters" id="filters" aria-label="Filter articles">
-        <button class="filter active" data-category="all">All stories</button>
-        <button class="filter" data-category="Business">Business</button>
-        <button class="filter" data-category="Technology">Technology</button>
-        <button class="filter" data-category="Personal Finance">Personal Finance</button>
-        <button class="filter" data-category="Real Estate">Real Estate</button>
-      </div>
-      <div class="meta" id="updated"></div>
-    </div>
-    <section id="featured-section" hidden>
-      <h2 class="section-label">Featured story</h2>
-      <div id="featured"></div>
-    </section>
-    <section>
-      <h2 class="section-label" id="list-heading">Latest articles</h2>
-      <div id="articles" class="grid"></div>
-      <div id="status" class="status"><div class="spinner"></div>Loading the latest FastNews articles…</div>
-      <div class="load-wrap" id="load-wrap" hidden><button class="load" id="load-more">Load older stories</button></div>
-    </section>
-  </main>
-  <footer>
-    <div class="wrap foot">
-      <div><strong>FastNews</strong> · Independent article discovery</div>
-      <div><a href="https://www.fastnews.news/">Main website</a> &nbsp;·&nbsp; <a href="https://feed.fastnews.news/news-sitemap.xml">Google News sitemap</a></div>
-    </div>
-  </footer>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+  <div id="featured"></div>
+  <h2 class="label" id="list-heading">Latest stories</h2>
+  <div class="grid" id="articles"></div>
+  <div class="status" id="status" role="status" aria-live="polite">Loading the latest stories&hellip;</div>
+  <div class="more" id="more" hidden><button class="btn" id="load-more" type="button">Load more stories</button></div>
+  <noscript><p class="noscript">This page needs JavaScript to list stories. You can read everything on the <a href="https://www.fastnews.news/">main FastNews website</a>.</p></noscript>
+</main>
+
+<footer>
+  <div class="wrap">
+    <ul>
+      <li><a href="https://www.fastnews.news/">FastNews</a></li>
+      <li><a href="https://www.fastnews.news/p/about.html">About</a></li>
+      <li><a href="https://www.fastnews.news/p/editorial-policy.html">Editorial policy</a></li>
+      <li><a href="https://www.fastnews.news/p/privacy-policy.html">Privacy policy</a></li>
+      <li><a href="https://www.fastnews.news/p/disclaimer.html">Disclaimer</a></li>
+      <li><a href="https://www.fastnews.news/p/contact.html">Contact</a></li>
+    </ul>
+    <p>&copy; <span id="yr"></span> FastNews. All rights reserved.</p>
+  </div>
+</footer>
+
 <script>
-(() => {
-  "use strict";
-  const FEED_URL = "https://www.fastnews.news/feeds/posts/default";
-  const PAGE_SIZE = 50;
-  const knownCategories = ["Business", "Technology", "Personal Finance", "Real Estate"];
-  let posts = [], startIndex = 1, activeCategory = "all", searchTerm = "", loading = false, finished = false;
-  const $ = id => document.getElementById(id);
-  const escapeHtml = value => String(value || "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
-  const plainText = html => { const doc = new DOMParser().parseFromString(String(html || ""), "text/html"); return (doc.body.textContent || "").replace(/\s+/g," ").trim(); };
-  const getLink = entry => (entry.link || []).find(x => x.rel === "alternate" && x.type !== "application/atom+xml")?.href || "#";
-  const getImage = entry => {
-    if (entry.media$thumbnail && entry.media$thumbnail.url) return entry.media$thumbnail.url.replace(/\/s\d+(-c)?\//,"/s800/");
-    const html = entry.content?.$t || entry.summary?.$t || "";
-    const match = html.match(/<img[^>]+src=["']([^"']+)["']/i);
-    return match ? match[1] : "";
-  };
-  const getCategory = entry => {
-    const labels = (entry.category || []).map(x => x.term || "");
-    return knownCategories.find(c => labels.some(label => label.toLowerCase() === c.toLowerCase())) || "Latest";
-  };
-  const formatDate = value => {
-    if (!value) return "";
-    const d = new Date(value);
-    if (Number.isNaN(d.getTime())) return "";
-    return new Intl.DateTimeFormat("en", {day:"numeric",month:"short",year:"numeric"}).format(d);
-  };
-  const normalize = entry => {
-    const html = entry.summary?.$t || entry.content?.$t || "";
-    const excerpt = plainText(html);
-    return {title:entry.title?.$t || "Untitled article",url:getLink(entry),image:getImage(entry),category:getCategory(entry),date:entry.published?.$t || entry.updated?.$t || "",excerpt:excerpt.length > 185 ? excerpt.slice(0,182).trimEnd()+"…" : excerpt};
-  };
-  function jsonp(url) {
-    return new Promise((resolve,reject) => {
-      const callback = "fastNewsFeedCallback_" + Date.now() + "_" + Math.floor(Math.random()*100000);
-      const script = document.createElement("script");
-      const timer = setTimeout(() => { cleanup(); reject(new Error("The article feed took too long to respond.")); }, 15000);
-      function cleanup(){clearTimeout(timer);delete window[callback];script.remove();}
-      window[callback] = data => {cleanup();resolve(data);};
-      script.onerror = () => {cleanup();reject(new Error("Could not connect to the FastNews article feed."));};
-      script.src = url + (url.includes("?") ? "&" : "?") + "alt=json-in-script&callback=" + callback;
-      document.head.appendChild(script);
-    });
-  }
-  function imageMarkup(src, title) {
-    if (!src) return '<div class="placeholder" aria-hidden="true">▧</div>';
-    return '<img src="'+escapeHtml(src)+'" alt="'+escapeHtml(title)+'" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.innerHTML=\'<div class=&quot;placeholder&quot;>▧</div>\'">';
-  }
-  function card(post) {
-    return '<article class="card"><a class="card-media" href="'+escapeHtml(post.url)+'" target="_blank" rel="noopener">'+imageMarkup(post.image,post.title)+'</a><div class="card-body"><span class="tag">'+escapeHtml(post.category)+'</span><h3><a href="'+escapeHtml(post.url)+'" target="_blank" rel="noopener">'+escapeHtml(post.title)+'</a></h3><p>'+escapeHtml(post.excerpt || "Read the latest story from FastNews.")+'</p><div class="card-foot"><a href="'+escapeHtml(post.url)+'" target="_blank" rel="noopener">Read full story ↗</a><time>'+escapeHtml(formatDate(post.date))+'</time></div></div></article>';
-  }
-  function feature(post) {
-    return '<article class="feature"><a class="feature-media" href="'+escapeHtml(post.url)+'" target="_blank" rel="noopener">'+imageMarkup(post.image,post.title)+'</a><div class="feature-copy"><span class="tag">'+escapeHtml(post.category)+'</span><h2><a href="'+escapeHtml(post.url)+'" target="_blank" rel="noopener">'+escapeHtml(post.title)+'</a></h2><div class="meta">'+escapeHtml(formatDate(post.date))+'</div><p>'+escapeHtml(post.excerpt || "Explore the latest story from FastNews.")+'</p><a class="read" href="'+escapeHtml(post.url)+'" target="_blank" rel="noopener">Read full article <span>↗</span></a></div></article>';
-  }
-  function render() {
-    const filtered = posts.filter(p => (activeCategory === "all" || p.category === activeCategory) && (!searchTerm || (p.title+" "+p.excerpt).toLowerCase().includes(searchTerm)));
-    $("story-count").innerHTML = "<strong>"+posts.length+"</strong> recent stories from FastNews";
-    $("updated").textContent = posts.length ? "Updated "+new Intl.DateTimeFormat("en",{hour:"numeric",minute:"2-digit"}).format(new Date()) : "";
-    const featuredSection = $("featured-section");
-    if (activeCategory === "all" && !searchTerm && filtered.length) {
-      featuredSection.hidden = false; $("featured").innerHTML = feature(filtered[0]);
-      $("list-heading").textContent = "More latest articles";
-      $("articles").innerHTML = filtered.slice(1).map(card).join("");
-    } else {
-      featuredSection.hidden = true; $("list-heading").textContent = "Articles";
-      $("articles").innerHTML = filtered.map(card).join("");
-    }
-    $("status").hidden = filtered.length > 0 || loading;
-    if (!filtered.length && !loading) $("status").textContent = posts.length ? "No articles match that search. Try another term or category." : "No articles are available right now.";
-    $("load-wrap").hidden = finished || !posts.length || !!searchTerm || activeCategory !== "all";
-    $("load-more").disabled = loading;
-  }
-  async function loadPosts() {
-    if (loading || finished) return;
-    loading = true; $("status").hidden = false; $("status").innerHTML = '<div class="spinner"></div>Loading the latest FastNews articles…'; $("load-more").disabled = true;
-    try {
-      const data = await jsonp(FEED_URL+"?max-results="+PAGE_SIZE+"&start-index="+startIndex);
-      const entries = data.feed?.entry || [];
-      const newPosts = entries.map(normalize).filter(p => p.url && p.url !== "#");
-      const seen = new Set(posts.map(p=>p.url));
-      posts.push(...newPosts.filter(p=>!seen.has(p.url)));
-      startIndex += entries.length;
-      if (entries.length < PAGE_SIZE) finished = true;
-      if (!entries.length && !posts.length) throw new Error("The Blogger feed returned no articles.");
-      render();
-    } catch (error) {
-      $("status").hidden = false;
-      $("status").innerHTML = '<strong>We could not load the articles.</strong><br>'+escapeHtml(error.message)+'<br><br><button class="load" onclick="location.reload()">Try again</button>';
-    } finally {
-      loading = false; $("load-more").disabled = false; render();
-    }
-  }
-  $("filters").addEventListener("click",event => {
-    const button = event.target.closest("button[data-category]"); if(!button)return;
-    activeCategory = button.dataset.category;
-    $("filters").querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b===button));
-    render();
+(function(){
+"use strict";
+var SITE="https://www.fastnews.news";                       /* your main Blogger site */
+var CATEGORIES=["Business","Technology","Personal Finance","Real Estate"]; /* must match your Blogger labels exactly */
+var PAGE=18;
+
+var $=function(id){return document.getElementById(id)};
+var esc=function(v){return String(v==null?"":v).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
+var safeUrl=function(u){return /^https?:\/\//i.test(u||"")?u:"#"};
+var slug=function(t){return String(t||"").trim().toLowerCase().replace(/\s+/g,"-")};
+/* Sharp Blogger thumbnails: handles /s72-c/, =s72-c and /w72-h72-.../ links */
+var big=function(u,w,h){return u.replace(/\/s\d+(-c)?\//,"/w"+w+"-h"+h+"-c/").replace(/=s\d+(-c)?(?=$|\?)/,"=w"+w+"-h"+h+"-c").replace(/\/w\d+-h\d+(-[a-z-]*)?\//,"/w"+w+"-h"+h+"-c/")};
+var fmt=function(v){var d=new Date(v);return isNaN(d)?"":new Intl.DateTimeFormat("en",{day:"numeric",month:"short",year:"numeric"}).format(d)};
+var text=function(html){var d=new DOMParser().parseFromString(String(html||""),"text/html");return(d.body.textContent||"").replace(/\s+/g," ").trim()};
+
+var st={label:"",q:"",posts:[],start:1,total:0,done:false,busy:false,token:0,error:""};
+
+function feedUrl(){
+  var path=SITE+"/feeds/posts/summary"+(st.label?"/-/"+encodeURIComponent(st.label):"");
+  var p=["max-results="+PAGE,"start-index="+st.start];
+  if(st.q)p.push("q="+encodeURIComponent(st.q));
+  return path+"?"+p.join("&");
+}
+function jsonp(url){
+  return new Promise(function(resolve,reject){
+    var cb="fn_"+Date.now()+"_"+Math.floor(Math.random()*1e5),s=document.createElement("script");
+    var timer=setTimeout(function(){done();reject(new Error("The feed took too long to respond."))},15000);
+    function done(){clearTimeout(timer);delete window[cb];s.remove()}
+    window[cb]=function(d){done();resolve(d)};
+    s.onerror=function(){done();reject(new Error("Could not reach the FastNews feed."))};
+    s.src=url+"&alt=json-in-script&callback="+cb;
+    document.head.appendChild(s);
   });
-  $("search").addEventListener("input",event=>{searchTerm=event.target.value.trim().toLowerCase();render();});
-  $("load-more").addEventListener("click",loadPosts);
-  loadPosts();
+}
+function normalize(e){
+  var link="";(e.link||[]).forEach(function(l){if(l.rel==="alternate")link=l.href});
+  var labels=(e.category||[]).map(function(c){return c.term||""});
+  var cat=CATEGORIES.filter(function(c){return labels.some(function(l){return l.toLowerCase()===c.toLowerCase()})})[0]||labels[0]||"Latest";
+  var img=e.media$thumbnail&&e.media$thumbnail.url?e.media$thumbnail.url:"";
+  var ex=text(e.summary&&e.summary.$t);
+  return{title:(e.title&&e.title.$t)||"Untitled",url:safeUrl(link),img:img,cat:cat,date:(e.published&&e.published.$t)||"",
+         excerpt:ex.length>180?ex.slice(0,177).trimEnd()+"\u2026":ex};
+}
+function media(p,w,h){
+  var inner=p.img?'<img src="'+esc(big(p.img,w,h))+'" alt="" width="'+w+'" height="'+h+'" loading="lazy" referrerpolicy="no-referrer">':'<span class="ph" aria-hidden="true">\u25A7</span>';
+  return '<a class="media" href="'+esc(p.url)+'" aria-hidden="true" tabindex="-1">'+inner+'</a>';
+}
+function card(p){
+  return '<article class="card">'+media(p,640,360)+
+    '<div class="top"><span class="tag" data-cat="'+esc(slug(p.cat))+'">'+esc(p.cat)+'</span></div>'+
+    '<h3><a href="'+esc(p.url)+'">'+esc(p.title)+'</a></h3>'+
+    (p.excerpt?'<p>'+esc(p.excerpt)+'</p>':'')+
+    '<p class="meta">'+esc(fmt(p.date))+'</p></article>';
+}
+function feature(p){
+  return '<article class="feature">'+media(p,1000,563)+
+    '<div><span class="tag" data-cat="'+esc(slug(p.cat))+'">'+esc(p.cat)+'</span>'+
+    '<h2><a href="'+esc(p.url)+'">'+esc(p.title)+'</a></h2><p class="meta">'+esc(fmt(p.date))+'</p>'+
+    (p.excerpt?'<p>'+esc(p.excerpt)+'</p>':'')+
+    '<a class="read" href="'+esc(p.url)+'">Read the full article</a></div></article>';
+}
+function render(){
+  var showFeature=!st.q&&!st.label&&st.posts.length>0;
+  $("featured").innerHTML=showFeature?feature(st.posts[0]):"";
+  $("articles").innerHTML=(showFeature?st.posts.slice(1):st.posts).map(card).join("");
+  $("list-heading").textContent=st.q?"Results for \u201C"+st.q+"\u201D":st.label?st.label:(showFeature?"More stories":"Latest stories");
+  $("list-heading").hidden=!st.posts.length;
+  var c=$("count");
+  c.innerHTML=st.total?"<strong>"+st.total+"</strong> "+(st.total===1?"story":"stories")+(st.q||st.label?" found":" on FastNews"):"";
+  var s=$("status");
+  if(st.busy&&!st.posts.length){s.hidden=false;s.textContent="Loading stories\u2026"}
+  else if(st.error){s.hidden=false;s.innerHTML="<strong>We could not load the stories.</strong><br>"+esc(st.error)+'<br><button class="btn" id="retry" type="button">Try again</button>';$("retry").onclick=function(){load(true)}}
+  else if(!st.posts.length){s.hidden=false;s.textContent="No stories match that search. Try another word or category."}
+  else s.hidden=true;
+  $("more").hidden=st.done||!st.posts.length;
+  $("load-more").disabled=st.busy;
+}
+function load(reset){
+  if(reset){st.token++;st.posts=[];st.start=1;st.total=0;st.done=false;st.error=""}
+  else if(st.busy||st.done)return;
+  var token=st.token;st.busy=true;render();
+  jsonp(feedUrl()).then(function(data){
+    if(token!==st.token)return;
+    var entries=(data.feed&&data.feed.entry)||[];
+    var seen={};st.posts.forEach(function(p){seen[p.url]=1});
+    entries.map(normalize).forEach(function(p){if(p.url!=="#"&&!seen[p.url]){seen[p.url]=1;st.posts.push(p)}});
+    st.start+=entries.length;
+    var t=data.feed&&data.feed.openSearch$totalResults&&parseInt(data.feed.openSearch$totalResults.$t,10);
+    st.total=t||st.posts.length;
+    if(entries.length<PAGE||st.start>st.total)st.done=true;
+  }).catch(function(err){
+    if(token===st.token)st.error=err.message;
+  }).then(function(){
+    if(token===st.token){st.busy=false;render()}
+  });
+}
+
+/* category buttons */
+var fb=$("filters");
+["All stories"].concat(CATEGORIES).forEach(function(name,i){
+  var b=document.createElement("button");b.type="button";b.className="filter";b.textContent=name;
+  b.dataset.label=i?name:"";b.setAttribute("aria-pressed",i?"false":"true");fb.appendChild(b);
+});
+fb.addEventListener("click",function(e){
+  var b=e.target.closest("button[data-label]");if(!b)return;
+  fb.querySelectorAll(".filter").forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});
+  st.label=b.dataset.label;load(true);
+});
+$("search-form").addEventListener("submit",function(e){e.preventDefault();st.q=$("q").value.trim();load(true)});
+$("q").addEventListener("input",function(){if(!this.value&&st.q){st.q="";load(true)}});
+$("load-more").addEventListener("click",function(){load(false)});
+$("yr").textContent=new Date().getFullYear();
+load(true);
 })();
 </script>
 </body>
