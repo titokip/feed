@@ -155,15 +155,4 @@
       <news:title>TFSA Strategies for Canadians: Maximizing Savings</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://www.fastnews.news/2026/11/isa-savings-guide-how-to-maximise-tax.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FastNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T21:12:55.000Z</news:publication_date>
-      <news:title>ISA Savings Guide: How to Maximise Tax-Free Returns</news:title>
-    </news:news>
-  </url>
 </urlset>
