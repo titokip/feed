@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "month": "2026-08",
+  "articles": [
+    {
+      "title": "Why Correlation Does Not Prove Causation: Lessons from Medical Research",
+      "category": "Unclassified",
+      "country": "Unknown",
+      "bloggerPostId": "7195089840353965938",
+      "url": "https://www.fastnews.news/2026/03/why-correlation-does-not-prove.html",
+      "publishedAt": "2026-08-15T11:46:00.000Z"
+    },
+    {
+      "title": "The Rise of AI Training Jobs: Opportunities, Skills, and How to Get Started",
+      "category": "Unclassified",
+      "country": "Unknown",
+      "bloggerPostId": "8437595042662875654",
+      "url": "https://www.fastnews.news/2026/04/the-rise-of-ai-training-jobs.html",
+      "publishedAt": "2026-08-22T12:05:28.000Z"
+    },
+    {
+      "title": "Why Medical Diagnostic Tests Can Mislead",
+      "category": "Unclassified",
+      "country": "Unknown",
+      "bloggerPostId": "6511431438054752968",
+      "url": "https://www.fastnews.news/2026/03/why-medical-diagnostic-tests-can-mislead.html",
+      "publishedAt": "2026-08-22T12:05:45.000Z"
+    }
+  ]
+}
