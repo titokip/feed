@@ -100,15 +100,4 @@
       <news:title>Home Network Security: How to Protect Australian Devices</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://www.fastnews.news/2026/11/commercial-lease-negotiation-for.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FastNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T21:45:37.000Z</news:publication_date>
-      <news:title>Commercial Lease Negotiation for Canadian Business</news:title>
-    </news:news>
-  </url>
 </urlset>
