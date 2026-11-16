@@ -111,15 +111,4 @@
       <news:title>Commercial Lease Negotiation for Canadian Business</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://www.fastnews.news/2026/11/debt-payoff-strategies-avalanche-vs.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FastNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-14T02:16:23.000Z</news:publication_date>
-      <news:title>Debt Payoff Strategies: Avalanche vs Snowball Method</news:title>
-    </news:news>
-  </url>
 </urlset>
