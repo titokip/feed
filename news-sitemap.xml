@@ -67,15 +67,4 @@
       <news:title>E-Waste Disposal in Canada: How to Safely Recycle Tech</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://www.fastnews.news/2026/11/llc-vs-s-corp-choosing-right-us.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FastNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-16T22:54:00.000Z</news:publication_date>
-      <news:title>LLC vs S-Corp: Choosing the Right US Business Structure</news:title>
-    </news:news>
-  </url>
 </urlset>
