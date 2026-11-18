@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.fastnews.news/2026/11/ev-battery-care-how-to-maintain-range.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FastNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-18T21:24:58.000Z</news:publication_date>
+      <news:title>EV Battery Care: How to Maintain Range in Canadian Winters</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.fastnews.news/2026/11/pension-lifetime-allowance-abolition.html</loc>
     <news:news>
       <news:publication>
