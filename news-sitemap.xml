@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.fastnews.news/2026/11/uk-vat-registration-thresholds-and.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FastNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19T23:54:20.000Z</news:publication_date>
+      <news:title>UK VAT Registration: Thresholds and Schemes Explained</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.fastnews.news/2026/11/resp-canada-guide-to-maximizing.html</loc>
     <news:news>
       <news:publication>
@@ -54,17 +65,6 @@
       </news:publication>
       <news:publication_date>2026-11-18T21:24:58.000Z</news:publication_date>
       <news:title>EV Battery Care: How to Maintain Range in Canadian Winters</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.fastnews.news/2026/11/pension-lifetime-allowance-abolition.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FastNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-17T23:53:05.000Z</news:publication_date>
-      <news:title>Pension Lifetime Allowance Abolition: What UK Savers Need</news:title>
     </news:news>
   </url>
 </urlset>
