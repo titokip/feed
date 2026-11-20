@@ -67,15 +67,4 @@
       <news:title>Corporate Tax Deductions for Canadian Small Business</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://www.fastnews.news/2026/11/ev-battery-care-how-to-maintain-range.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FastNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-18T21:24:58.000Z</news:publication_date>
-      <news:title>EV Battery Care: How to Maintain Range in Canadian Winters</news:title>
-    </news:news>
-  </url>
 </urlset>
