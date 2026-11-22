@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.fastnews.news/2026/11/novated-leases-in-australia-how-salary.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>FastNews</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22T22:50:52.000Z</news:publication_date>
+      <news:title>Novated Leases in Australia: How Salary Packaging Works</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.fastnews.news/2026/11/small-business-rates-relief-in-england.html</loc>
     <news:news>
       <news:publication>
