@@ -67,15 +67,4 @@
       <news:title>Refurbished Electronics in Canada: A Buyer Safety Guide</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://www.fastnews.news/2026/11/uk-vat-registration-thresholds-and.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FastNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19T23:54:20.000Z</news:publication_date>
-      <news:title>UK VAT Registration: Thresholds and Schemes Explained</news:title>
-    </news:news>
-  </url>
 </urlset>
