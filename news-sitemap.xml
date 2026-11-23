@@ -67,15 +67,4 @@
       <news:title>Small Business Rates Relief in England: How to Apply</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://www.fastnews.news/2026/11/nbn-connection-types-how-fttp-fttn-and.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FastNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21T22:23:00.000Z</news:publication_date>
-      <news:title>NBN Connection Types: How FTTP, FTTN and HFC Differ</news:title>
-    </news:news>
-  </url>
 </urlset>
