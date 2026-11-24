@@ -67,15 +67,4 @@
       <news:title>UK Workplace Pension Auto-Enrolment: Employer Guide</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://www.fastnews.news/2026/11/roth-ira-vs-traditional-ira-how-to.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FastNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T23:22:53.000Z</news:publication_date>
-      <news:title>Roth IRA vs Traditional IRA: How to Choose the Right Plan</news:title>
-    </news:news>
-  </url>
 </urlset>
