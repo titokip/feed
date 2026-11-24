@@ -67,15 +67,4 @@
       <news:title>Novated Leases in Australia: How Salary Packaging Works</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://www.fastnews.news/2026/11/small-business-rates-relief-in-england.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>FastNews</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22T21:52:28.000Z</news:publication_date>
-      <news:title>Small Business Rates Relief in England: How to Apply</news:title>
-    </news:news>
-  </url>
 </urlset>
